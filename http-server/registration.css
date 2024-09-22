@@ -1,0 +1,128 @@
+/* STYLE FOR WHOLE BODY */
+body{
+    height: 80vb;
+    position: fixed;
+    left: 30%;bottom: 7px;
+    text-align: justify;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 90px 0;margin-bottom: 150px;
+}
+
+/* STYLE FOR h1  */
+form h1{
+    text-align: center;
+}
+
+/* STYLE FOR WHOLE FORM */
+form{
+    padding-bottom: 60px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: justify;
+}
+
+/* STYLE FOR ALL LABELS EXCEPT TC */
+form label:not(.acceptTerms){
+    display: block;
+    font-size: 16px;
+    text-decoration: solid;
+    margin-top: 18px;margin-left: 50px;
+    position:fixed;
+}
+
+/* STYLE  FOR ALL INPUTS */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"]{
+    display:block;
+    color: #87888c;border: #f3f4f6; border-radius: 5px;background-color: rgb(229, 225, 225);
+    box-shadow: 0px 5px 0px 0px rgba(214, 208, 208, 0.8);
+    width: 50%;
+    padding: 15px;
+    margin-left: 200px;margin-bottom: 15px;
+    box-sizing:border-box;
+    font-size: 14px;
+    outline:none;
+}
+
+/* STYLE FOR CHECKBOX INPUT */
+form input[type="checkbox"] {
+    margin-left: 50px;margin-top: 0px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+/* STYLE FOR SUBMIT BUTON */
+form button {
+    width: 30%;
+    padding: 20px;margin-left: 50px;margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0px 5px 0px 0px rgba(214, 208, 208, 0.8);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* STYLE FOR div botom */
+form #bottom{
+    margin-top: 20px;
+}
+
+form input[type="date"]{
+    input[type="date"]::before {
+        content: attr(data-placeholder);
+        color: darkmagenta;
+    }
+
+    input[type="date"]:focus::before,
+    input[type="date"]:valid::before {
+        content: "";
+    }
+}
+
+/* STYLE FOR div user-entries box */
+#user-entries{
+    margin-bottom: -700px;
+    display: flex;height: 15%;
+    position:fixed;
+    padding-bottom: 60px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    justify-items: center;
+}
+
+/* STYLE FOR TABLE */
+.table-auto {
+    text-align: left;
+    width:100%;
+    margin:20px 0;
+    border-collapse: collapse;
+    th{
+        border: 1px solid #ddd;
+        font-weight:bolder;
+        padding: 12px 6px;
+    }
+    th{
+        border: 1px solid #ddd;
+        font-weight: normal;
+        padding: 12px 6px;
+    }
+}
+

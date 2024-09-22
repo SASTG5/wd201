@@ -1,0 +1,42 @@
+<html>
+    <title>
+        Registration Form
+    </title>
+    <head>
+        <link rel="stylesheet" href="registration.css">
+        
+    </head>
+    <body>
+        <div>
+        <form id="form">
+            <h1>Registration Form</h1><br>
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input required type="text" id="name" name="name" placeholder="Enter full name">
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input required type="email" id="email" name="email" placeholder="Enter email">
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input required type="password" id="password" name="password" placeholder="Enter password">
+            
+            <!-- DOB -->
+            <label for="dob">Date of Birth</label>
+            <input required type="date" id="dob" name="dob" placeholder="dob" style="color: darkmagenta;">
+
+            <!-- T&C -->
+            <div id="bottom">
+            <label class="acceptTerms" for="acceptTerms">
+            <input required type="checkbox" id="acceptTerms" name="acceptTerms" >
+            Accept Terms and Conditions</label><br></div>
+
+            <!-- submit -->
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+        <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+        <script src="registration.js"></script>
+    </body>
+</html>
