@@ -12,7 +12,7 @@ describe("Todolist Test Suite", () => {
     });
   });
 
-  test("Should add new todo", () => {
+  test("Teest to add a todo", () => {
     const todoItemsCount = all.length;
     add({
       title: "Test todo",
@@ -22,13 +22,13 @@ describe("Todolist Test Suite", () => {
     expect(all.length).toBe(todoItemsCount + 1);
   });
 
-  test("Should mark a todo as complete", () => {
+  test("Test to mark a todo as complete", () => {
     expect(all[0].completed).toBe(false);
     markAsComplete(0);
     expect(all[0].completed).toBe(true);
   });
 
-  test("Should retrieve overdue items", () => {
+  test("Test to retrieve overdue items", () => {
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     add({
@@ -39,7 +39,7 @@ describe("Todolist Test Suite", () => {
     expect(overdue().length).toBeGreaterThanOrEqual(1); 
   });
 
-  test("Should retrieve due today items", () => {
+  test("Test to retrieve due today items", () => {
     const today = new Date().toISOString().slice(0, 10);
     add({
       title: "Due today todo",
@@ -49,7 +49,7 @@ describe("Todolist Test Suite", () => {
     expect(dueToday().length).toBeGreaterThanOrEqual(1);
   });
 
-  test("Should retrieve due later items", () => {
+  test("Test to retrieve due later items", () => {
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
     add({
