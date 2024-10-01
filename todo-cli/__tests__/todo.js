@@ -9,7 +9,7 @@ describe("Todolist Test Suite", () => {
             {
                 title: "Test todo",
                 completed: false,
-                dueDate: 2024-10-03
+                dueDate: "2024-10-03"
             }
         );
         expect(todos.all.length).toBe(todoItemsCount + 1);
