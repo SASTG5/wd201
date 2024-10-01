@@ -1,25 +1,20 @@
 {
   "name": "todo-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "todo-list-cli",
   "main": "todo.js",
   "scripts": {
-    "test": "jest",
-    "prepare": "cd .. && husky install todo-cli/.husky"
+    "test": "jest"
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint",
-      "prettier --write ."
-    ]
-  },
-  "author": "UPAGNA",
-  "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "husky": "^8.0.3",
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6",
     "jest": "^29.7.0",
-    "lint-staged": "^15.2.0",
-    "prettier": "^3.1.1"
-  }
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3"
+  },
+  "author": "Sashang Umanath S <sastgfive@gmail.com>",
+  "license": "ISC"
 }
